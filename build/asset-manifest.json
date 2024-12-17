@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Dkart-Ecommerce-Website/static/css/main.8e076d12.css",
+    "main.js": "/Dkart-Ecommerce-Website/static/js/main.be6590fa.js",
+    "static/media/banner2.png": "/Dkart-Ecommerce-Website/static/media/banner2.010e9d3a1c0883abc386.png",
+    "static/media/banner1.png": "/Dkart-Ecommerce-Website/static/media/banner1.9273a1cc48b498c203b4.png",
+    "static/media/dkart.png": "/Dkart-Ecommerce-Website/static/media/dkart.7dc4f3a81df48361c6b1.png",
+    "index.html": "/Dkart-Ecommerce-Website/index.html",
+    "main.8e076d12.css.map": "/Dkart-Ecommerce-Website/static/css/main.8e076d12.css.map",
+    "main.be6590fa.js.map": "/Dkart-Ecommerce-Website/static/js/main.be6590fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e076d12.css",
+    "static/js/main.be6590fa.js"
+  ]
+}
