@@ -4,6 +4,8 @@
 
 Welcome to **Dkart**, an online shopping platform that offers a wide range of products including fashion, electronics, and more. Dkart is a modern, responsive, and user-friendly e-commerce website, built using **React** and **CSS**. This project is designed to provide a seamless shopping experience for users across all devices.
 
+**Live View -** https://swarup-kumar-sahoo.github.io/Dkart-Ecommerce-Website/
+
 ![dkart](https://github.com/user-attachments/assets/f69cfad8-515e-4488-927e-f7a542b6c476)
 
 
