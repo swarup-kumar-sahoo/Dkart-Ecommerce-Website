@@ -1,0 +1,86 @@
+/* General Styles */
+.electronics-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+  }
+  
+  .electronics-page h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #2c3e50;
+  }
+  
+  /* Grid Container */
+  .electronics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+    gap: 20px;
+  }
+  
+  /* Individual Card */
+  .electronics-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .electronics-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .electronics-card img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover;
+  }
+  
+  .electronics-details {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .electronics-details h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    color: #34495e;
+  }
+  
+  .electronics-details p {
+    font-size: 0.9rem;
+    margin: 0 0 10px;
+    color: #7f8c8d;
+  }
+  
+  .electronics-details span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  /* Responsive Grid: Below 460px */
+  @media (max-width: 460px) {
+    .electronics-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller devices */
+      gap: 10px;
+    }
+  
+    .electronics-card img {
+      height: 150px; /* Smaller image size */
+    }
+  
+    .electronics-details h2 {
+      font-size: 0.9rem;
+    }
+  
+    .electronics-details p {
+      font-size: 0.8rem;
+    }
+  
+    .electronics-details span {
+      font-size: 0.9rem;
+    }
+  }
+  

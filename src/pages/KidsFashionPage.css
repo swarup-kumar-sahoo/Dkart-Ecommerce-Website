@@ -1,0 +1,86 @@
+/* General Styles */
+.kids-fashion-page {
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9ff;
+  }
+  
+  .kids-fashion-page h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Grid Container */
+  .kids-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row for desktop */
+    gap: 20px;
+  }
+  
+  /* Individual Card */
+  .kids-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .kids-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .kids-card img {
+    width: 100%;
+    height: 200px; /* Consistent height for grid items */
+    object-fit: cover;
+  }
+  
+  .kids-details {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .kids-details h2 {
+    font-size: 1.1rem;
+    margin: 0 0 10px;
+    color: #222;
+  }
+  
+  .kids-details p {
+    font-size: 0.9rem;
+    margin: 0 0 10px;
+    color: #555;
+  }
+  
+  .kids-details span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #3498db; /* Stylish blue for kids' pricing */
+  }
+  
+  /* Responsive Grid: Below 460px */
+  @media (max-width: 460px) {
+    .kids-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 items per row for mobile */
+      gap: 10px;
+    }
+  
+    .kids-card img {
+      height: 150px; /* Smaller images for small screens */
+    }
+  
+    .kids-details h2 {
+      font-size: 0.9rem;
+    }
+  
+    .kids-details p {
+      font-size: 0.8rem;
+    }
+  
+    .kids-details span {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,404 @@
+/* General Styling */
+.homepage {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Auto-scrolling Banner Section */
+.banner-section {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  z-index: -1; /* Ensure banner is behind the menu */
+}
+
+.banner {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+}
+
+/* Search Bar */
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-bar {
+  width: 50%;
+  max-width: 600px;
+  height: 45px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-bar:focus {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+}
+
+/* Horizontal Scrollable Card Section */
+.horizontal-cards {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.horizontal-cards h2 {
+  margin-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.card {
+  min-width: 200px;
+  height: 250px;
+  margin: 0 10px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1em;
+}
+
+/* Hamburger Menu (Removed left-side hamburger) */
+.hamburger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10; /* Ensure it is above the banner */
+}
+
+.hamburger-menu .line {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+}
+
+.sidebar-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 20; /* Ensure it's above the banner */
+  padding-top: 50px;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu ul li {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar-menu ul li:hover {
+  background-color: #f0f0f0;
+}
+
+.horizontal-brands {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.horizontal-brands h2 {
+  margin-bottom: 10px;
+}
+
+.brand-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.brand {
+  min-width: 150px;
+  height: 200px;
+  margin: 0 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brand-logo {
+  width: 100%;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px 10px 0 0;
+}
+
+.brand h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+/* Horizontal Scrollable Testimonial Section */
+.horizontal-testimonials {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.horizontal-testimonials h2 {
+  margin-bottom: 10px;
+}
+
+.testimonial-container {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.testimonial {
+  min-width: 350px;
+  height: 250px;
+  margin: 0 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  text-align: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+.testimonial p {
+  font-style: italic;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.testimonial .author-info {
+  font-size: 1em;
+  color: #ddd;
+  margin-top: 10px;
+}
+
+/* Custom Background for Each Testimonial */
+.testimonial-1 {
+  background-image: url('https://blog.g3fashion.com/wp-content/uploads/2022/06/mens-kurta-styles.jpg');
+}
+
+.testimonial-2 {
+  background-image: url('https://i.pinimg.com/736x/31/6e/4c/316e4c18e0c245f236e4270379195213.jpg');
+}
+
+.testimonial-3 {
+  background-image: url('https://vlebazaar.in/image/cache/catalog/realme-Buds-Air-3-Neo-True-Wireless-in-Ear-Earbuds-with-Mic-30-hrs-Playt/realme-Buds-Air-3-Neo-True-Wireless-in-Ear-Earbuds-with-Mic-30-hrs-Playtime-with-600x315h.jpg');
+}
+
+.testimonial-4 {
+  background-image: url('https://himalayaoptical.com/cdn/shop/products/0RB4390I__644919_000A_1024x.jpg?v=1669899788');
+}
+
+/* Grid Card Section */
+.grid-card-section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1200px;
+  text-align: center;
+}
+
+.grid-card-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+.grid-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid-card {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.grid-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact Section */
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #b26ecb;
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #b26ecb;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #60275c;
+}
+
+/* Responsive Contact Section */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 0 10px;
+  }
+}
+
+/* Responsive Grid View */
+@media (max-width: 1024px) {
+  .grid-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-card-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+
+/* Responsive Search Bar */
+@media (max-width: 768px) {
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .horizontal-cards h2 {
+    font-size: 1.2em;
+  }
+
+  .card {
+    min-width: 150px;
+    height: 200px;
+  }
+}

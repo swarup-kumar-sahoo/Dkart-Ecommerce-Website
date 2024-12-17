@@ -1,0 +1,35 @@
+[
+    {
+      "id": 1,
+      "title": "Men's Casual Shirt",
+      "category": "mens",
+      "price": 25.99,
+      "image": "https://via.placeholder.com/200",
+      "description": "A comfortable casual shirt for men."
+    },
+    {
+      "id": 2,
+      "title": "Women's Dress",
+      "category": "womens",
+      "price": 39.99,
+      "image": "https://via.placeholder.com/200",
+      "description": "A stylish dress for women."
+    },
+    {
+      "id": 3,
+      "title": "Kids' Sneakers",
+      "category": "kids",
+      "price": 19.99,
+      "image": "https://via.placeholder.com/200",
+      "description": "Comfortable sneakers for kids."
+    },
+    {
+      "id": 4,
+      "title": "Smartphone",
+      "category": "electronics",
+      "price": 299.99,
+      "image": "https://via.placeholder.com/200",
+      "description": "Latest smartphone with great features."
+    }
+  ]
+  
